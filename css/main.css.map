@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "main.css",
+	"sources": [
+		"../scss/main.scss"
+	],
+	"sourcesContent": [
+		"// some variables\n$font-stack: Helvetica, sans-serif;\n$primary-color: #333;\n\nbody {\n  font: 100% $font-stack;\n  color: $primary-color;\n}\n"
+	],
+	"names": [],
+	"mappings": "AAIA,AAAA,IAAI,CAAC;EACH,IAAI,EAAE,IAAI,CAJC,SAAS,EAAE,UAAU;EAKhC,KAAK,EAJS,IAAI;CAKnB"
+}
