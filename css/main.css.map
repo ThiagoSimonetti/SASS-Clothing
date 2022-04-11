@@ -2,11 +2,17 @@
 	"version": 3,
 	"file": "main.css",
 	"sources": [
-		"../scss/main.scss"
+		"../scss/main.scss",
+		"../scss/abstracts/_variables.scss",
+		"../scss/abstracts/_mixins.scss",
+		"../scss/base/_base.scss"
 	],
 	"sourcesContent": [
-		"// some variables\n$font-stack: Helvetica, sans-serif;\n$primary-color: #333;\n\nbody {\n  font: 100% $font-stack;\n  color: $primary-color;\n}\n"
+		"@import 'abstracts/variables';\n@import 'abstracts/mixins';\n@import 'base/base';\n",
+		"",
+		"",
+		"* {\n  margin: 0;\n  padding: 0;\n  font-family: 'Josefin Sans', sans-serif;\n}\n\nhtml {\n  // 1rem = 10px\n  font-size: 62.5%;\n}\n"
 	],
 	"names": [],
-	"mappings": "AAIA,AAAA,IAAI,CAAC;EACH,IAAI,EAAE,IAAI,CAJC,SAAS,EAAE,UAAU;EAKhC,KAAK,EAJS,IAAI;CAKnB"
+	"mappings": "AGAA,AAAA,CAAC,CAAC;EACA,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,WAAW,EAAE,0BAA0B;CACxC;;AAED,AAAA,IAAI,CAAC;EAEH,SAAS,EAAE,KAAK;CACjB"
 }

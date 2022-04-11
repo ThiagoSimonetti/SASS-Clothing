@@ -4,13 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/main.scss css/main.css"
+    "watch": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/main.scss css/main.css -w"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ThiagoSimonetti/SASS-Clothing.git"
   },
-  "author": "",
+  "author": "Thiago Simonetti",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ThiagoSimonetti/SASS-Clothing/issues"
