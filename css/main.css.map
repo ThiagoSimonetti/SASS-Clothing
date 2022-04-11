@@ -9,10 +9,10 @@
 	],
 	"sourcesContent": [
 		"@import 'abstracts/variables';\n@import 'abstracts/mixins';\n@import 'base/base';\n",
+		"$colors: (\n  primary: #333,\n  secondary: #ffe,\n  tertiary: #f2f0f1,\n  quartenary: #f5b149,\n);\n\n@function color($color-name) {\n  @return map-get($map: $colors, $key: $color-name);\n}\n",
 		"",
-		"",
-		"* {\n  margin: 0;\n  padding: 0;\n  font-family: 'Josefin Sans', sans-serif;\n}\n\nhtml {\n  // 1rem = 10px\n  font-size: 62.5%;\n}\n"
+		"* {\n  margin: 0;\n  padding: 0;\n  font-family: 'Josefin Sans', sans-serif;\n}\n\nhtml {\n  // 1rem = 10px\n  font-size: 62.5%;\n}\n\n.container {\n  display: grid;\n  grid-template-columns: minmax(6rem, 1fr) repeat(8, minmax(min-content, 16rem)) minmax(\n      6rem,\n      1fr\n    );\n  grid-template-rows: repeat(4, min-content);\n  grid-row-gap: 1.6rem;\n  background-color: color(tertiary);\n}\n"
 	],
 	"names": [],
-	"mappings": "AGAA,AAAA,CAAC,CAAC;EACA,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,WAAW,EAAE,0BAA0B;CACxC;;AAED,AAAA,IAAI,CAAC;EAEH,SAAS,EAAE,KAAK;CACjB"
+	"mappings": "AGAA,AAAA,CAAC,CAAC;EACA,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,WAAW,EAAE,0BAA0B;CACxC;;AAED,AAAA,IAAI,CAAC;EAEH,SAAS,EAAE,KAAK;CACjB;;AAED,AAAA,UAAU,CAAC;EACT,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,iBAAiB,CAAC,qCAAqC,CAAC,iBAG5E;EACH,kBAAkB,EAAE,sBAAsB;EAC1C,YAAY,EAAE,MAAM;EACpB,gBAAgB,EFhBN,OAAO;CEiBlB"
 }
